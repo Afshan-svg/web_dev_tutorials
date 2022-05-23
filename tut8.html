@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>Forms in HTML</h2>
+    <form action="backent.php">
+        <!-- action implies where you want to store the data we will store it in our backend  -->
+        <!-- div takes an entire block  -->
+        <!-- we have to tell the backend which data should go for which one so we have to specify it in name  -->
+        <!-- label tag is used to seelect anelement to be entered by tapping it  -->
+        <!-- for it "for" should be same as "id" -->
+        <label for="name">Name:</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div> <br>
+        <div>
+            email: <input type="text" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <label for="Eligibility">Are you eleigible</label>
+        <div>
+            <input type="checkbox" name="myEligibility" id="Eligibility">
+        </div>
+        <!-- Radio is used to select any one  -->
+        <!-- by default it will be checked if we enter checked -->
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female: <input type="radio" name="myGender"> Other <input
+                type="radio" name="myGender">
+        </div>
+        <br>
+        Write about yourself <br>
+        <textarea name="myInfo" id="" cols="30" rows="8"></textarea>
+        <div> <br>
+            <label for="car">Car</label>
+            <div>
+                <select name="myCar" id="car">
+                    <option value="ind">Indica</option>
+                    <option value="swift" selected>swift</option>
+                    <option value="ciaz">ciaz</option>
+                </select>
+                <!-- selected makes the value by default  -->
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit now">
+                <input type="reset" value="Reset now">
+                <!-- submit gos to backend  -->
+            </div>
+    </form>
+</body>
+
+</html>

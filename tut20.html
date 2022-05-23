@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Box model contains of margin,border,padding resp  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(179, 231, 240);
+        }
+
+        .container {
+            background-color: #fae0f7;
+            border: 3px solid rgb(240, 59, 59);
+            /* padding: 40px;
+            margin: 20px; */
+            /* there are different ways in adding a padd,margin in CSS  */
+            /* padding-top: 8px;  */
+            /* padding-bottom: 38px;  */
+            /* or  */
+            /* same for padding and margin  */
+            /* padding: 23px 56px 67px 67px;  */
+            /* padding: 34px 45px; for padding in xy and keep top,bottom same  */
+            padding: 34px 19px;
+            margin: 14px 19px;
+            border-radius: 32px;
+            width: 548px;
+            /* with change in padding and margin width changes  */
+            /* we can avoid iit by box prooperty which is cool  */
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is my heading </h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quidem distinctio consequatur
+            facere non officia! Natus, fuga harum dicta in soluta ea voluptatem. Odio hic, maiores tempore fugiat
+            cupiditate consequatur magni optio totam velit.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my second heading </h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quidem distinctio consequatur
+            facere non officia! Natus, fuga harum dicta in soluta ea voluptatem. Odio hic, maiores tempore fugiat
+            cupiditate consequatur magni optio totam velit.</p>
+    </div>
+
+    <div class="container">
+        <h3>This is my third heading </h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quidem distinctio consequatur
+            facere non officia! Natus, fuga harum dicta in soluta ea voluptatem. Odio hic, maiores tempore fugiat
+            cupiditate consequatur magni optio totam velit.</p>
+    </div>
+
+</body>
+
+</html>

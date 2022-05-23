@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- when we do margin auto the elements will be centred  -->
+<!-- there are display block and display innline  -->
+<!-- img is inline  -->
+<!-- inline block is a special case  -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        header {
+            border: 2px solid red;
+            margin: auto;
+            width: 15%;
+            /* since header is a block element we can add width  */
+        }
+
+        h3 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            width: 34px;
+            box-sizing: border-box;
+        }
+
+        .box {
+            border: 4px solid black;
+            background-color: burlywood;
+            margin: 0px;
+            padding: 24px;
+            display: inline-block;
+            width: 33%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: auto;
+            width: 1200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="https://codewithharry.com/img/logo-blue.png" alt="loading">
+        <h3>Welcome to my blog </h3>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta laborum fugiat aperiam, unde, nobis,
+                expedita dolores explicabo qui corporis nam provident at eum rem ea? Reiciendis consequuntur quo
+                distinctio optio soluta repellendus ipsum in.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta laborum fugiat aperiam, unde, nobis,
+                expedita dolores explicabo qui corporis nam provident at eum rem ea? Reiciendis consequuntur quo
+                distinctio optio soluta repellendus ipsum in.</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta laborum fugiat aperiam, unde, nobis,
+                expedita dolores explicabo qui corporis nam provident at eum rem ea? Reiciendis consequuntur quo
+                distinctio optio soluta repellendus ipsum in.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            color: rgb(25, 0, 255);
+            background-color: wheat;
+            border-style: solid;
+            border-color: tomato;
+            border-width: 2px;
+            font-family: cursive;
+            font-style: italic;
+        }
+
+        #hisName {
+            color: tan;
+        }
+
+        #abtUrself {
+            color: rgb(25, 0, 255);
+        }
+
+        #colorBox {
+            color: sienna;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="wp579699-star-wallpaper.jpg" alt="error">
+    <h2>This is a practise session</h2>
+    <form action="backent.php">
+
+        <label id="hisName" for="name">Name:</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div> <br>
+        <div>
+            email: <input type="text" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <label for="Eligibility">Are you eleigible</label>
+        <div>
+            <input id="colorBox" type="checkbox" name="myEligibility" id="Eligibility">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female: <input type="radio" name="myGender"> Other <input
+                type="radio" name="myGender">
+        </div>
+        <br>
+        <p id="abtUrself">Write about yourself</p> <br>
+        <textarea name="myInfo" id="" cols="30" rows="8"></textarea>
+        <div> <br>
+            <label for="car">Car</label>
+            <div>
+                <select name="myCar" id="car">
+                    <option value="ind">Indica</option>
+                    <option value="swift" selected>swift</option>
+                    <option value="ciaz">ciaz</option>
+                </select>
+
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Submit now">
+                <input type="reset" value="Reset now">
+
+            </div>
+    </form>
+
+    <table>
+        <div>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Afshan</td>
+                    <td>ML Expert</td>
+                    <td>123</td>
+                </tr>
+                <tr>
+                    <td>Aazam</td>
+                    <td>DL Expert</td>
+                    <td>456</td>
+                </tr>
+                <tr>
+                    <td>Arshad</td>
+                    <td>B Expert</td>
+                    <td>789</td>
+                </tr>
+            </tbody>
+    </table>
+    </div>
+</body>
+
+</html>

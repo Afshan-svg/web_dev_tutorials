@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selecors and more designing</title>
+    <style>
+        .container {
+            background-color: burlywood;
+            border: 6px solid rgb(241, 135, 135);
+            margin: 44px auto;
+            padding: 44px;
+            width: 666px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            
+            background-color: wheat;
+        }
+        a:visited{
+           background-color: rgb(243, 198, 16);
+        }
+        a:active{
+            background-color: blue;
+        }
+        .btn {
+            font-family: cursive;
+            font-weight: bold;
+            background-color: rgb(214, 223, 173);
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 9px;
+            border-radius: 6px;
+        }
+        .btn:hover{
+            background-color: darkcyan;
+            border: 4px solid yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus exercitationem sed cumque odio
+            recusandae praesentium eligendi beatae rerum impedit totam ex, libero ea aliquid aperiam a voluptates
+            doloremque dignissimos commodi vero, maxime ullam! Cum?</p>
+        <a href="https://gooogle.com" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+
+</body>
+
+</html>

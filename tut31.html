@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance CSS Selectors</title>
+    <style>
+        h1 {
+            color: bisque;
+            background-color: black;
+            text-align: center;
+        }
+
+/* if p is contained by any li which is contained by div  */
+        /* div p{
+            color: black;
+            background-color: chartreuse;
+            font-weight: bold;
+            display: inline-block;
+        } */
+
+/* if pp is right inside div then this CSS will be applied  */
+        /* div > p {
+            color: cadetblue;
+            background-color: cornsilk;
+            font-weight: bold;
+        } */
+
+/* if p is right after div i.e p is next sibling of div  */
+        div + p {
+            color: crimson;
+            background-color: cyan;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is more on selectors</h1>
+
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph insidde li</p></li>
+                <li>this will not get affected</li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+
+</html>

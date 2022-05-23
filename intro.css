@@ -1,0 +1,27 @@
+/* <!-- cascading style sheets      -->
+
+    <!-- syntax of CSS 
+selector    property    value 
+p     {    color:      blue;   }
+
+where      this         set the value  -->
+
+    <!-- and  -->
+    <!-- or 
+header, p.intro {
+    background-color:red;
+    border-radius:3px;
+} -->
+
+<!-- markup means html code  -->
+
+<!-- three ways to add css in markup 
+1. Inline CSS is added to the elements directly using style attribute
+2. Internal CSS is kept inside the haed tags in style tags 
+3. External CSS by creating a separate .css file and design style sheet  --> */
+
+/* different types of selectors
+    css element selector
+    css id selector
+    css class selector 
+    css group selector  */

@@ -1,0 +1,51 @@
+<!-- various ways to achieeve responsive website 
+1. setting up viewport 
+2. use max width,max height'
+3. using css media queries
+4. using rem,vh,vw units over pixels  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjustin size</title>
+    <style>
+        .container {
+            font-size: 25px;
+            border: 2px solid red;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        /* 10em implies 10X to that of parent  */
+        #first {
+            font-size: 2em;
+            padding: 2em;
+            /* it will give 4*4*100 padding*/
+        }
+
+        #second {
+            font-size: 2rem;
+            padding: 2rem;
+            /* rem is used for relative  */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 id="first">This is my first heading</h3>
+        <h3 id="second">This is my second heading</h3>
+        <h3 id="third">This is my third heading</h3>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar {
+            background-color: rgb(200, 59, 243);
+            border-radius: 90px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            /* here bullet points are added and color goes since parent makes it overflow  */
+            list-style: none;
+            margin: 10px 11px;
+            padding: 6px 21px;
+            font-size: 20px;
+        }
+
+        /* .navbar :hover{
+            background-color: royalblue;
+        } */
+
+        .navbar li a {
+            color: black;
+            padding: 10px 10px;
+            text-decoration: none;
+            /* removes  underline  */
+        }
+
+        .searchbox {
+            float: right;
+            color: black;
+            padding: 19px 76px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 12px;
+            padding: 3px 4px;
+            width: 129px;
+        }
+
+        .navbar li a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="searchbox">
+                    <input type="text" name="search" id="searchbox" placeholder="google">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>
